@@ -46,7 +46,7 @@ namespace ClasesEjercicioPrueba.Repository
         {
             using (var context = new ApplicationDbContext())
             {
-                // Incluir las entidades relacionadas para que Producto y Cliente no sean null
+
                 return context.venta
                     .Include(v => v.Producto)
                     .Include(v => v.Cliente)

@@ -11,6 +11,7 @@ namespace ClasesEjercicioPrueba.Models
 {
     public class Venta
     {
+        [Key]
         public int Id { get; set; }
         public DateTime Fecha { get; set; }
         public Cliente Cliente { get; set; }
